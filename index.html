@@ -3,210 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sumit Kumar | Real-Time 3D Specialist</title>
+<title>My Resume</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    background:#0f172a;
-    color:white;
-    line-height:1.6;
+.topbar {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
+.download-btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.hero{
-    text-align:center;
-    padding:80px 20px;
+.download-btn:hover {
+    background: #1d4ed8;
 }
 
-.hero h1{
-    font-size:3rem;
-}
-
-.hero h2{
-    color:#60a5fa;
-    margin-top:10px;
-}
-
-.hero p{
-    max-width:800px;
-    margin:20px auto;
-    color:#cbd5e1;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 24px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-.section{
-    margin-top:60px;
-}
-
-.section h3{
-    margin-bottom:20px;
-    color:#60a5fa;
-    border-bottom:2px solid #1e293b;
-    padding-bottom:10px;
-}
-
-.card{
-    background:#1e293b;
-    padding:20px;
-    margin-bottom:15px;
-    border-radius:10px;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.skill{
-    background:#334155;
-    padding:8px 15px;
-    border-radius:20px;
-}
-
-.project{
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
-}
-
-footer{
-    text-align:center;
-    margin-top:60px;
-    padding:20px;
-    color:#94a3b8;
+.pdf-viewer {
+    width: 100%;
+    height: 100vh;
+    border: none;
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
-
-    <section class="hero">
-        <h1>Sumit Kumar</h1>
-        <h2>Real-Time 3D Specialist</h2>
-
-        <p>
-            Unreal Engine Developer with 4+ years of experience in
-            Real-Time 3D Applications, Interactive Experiences,
-            BIM Visualization, XR Solutions and Game Development.
-        </p>
-
-        <a class="btn" href="resume.pdf" target="_blank">
-            Download CV
-        </a>
-    </section>
-
-    <section class="section">
-        <h3>About Me</h3>
-
-        <div class="card">
-            Experienced Unreal Engine Developer specializing in
-            Unreal Engine 4 & 5, Real-Time Visualization,
-            Interactive Experiences, XR Applications,
-            Optimization and Technical Development.
-        </div>
-    </section>
-
-    <section class="section">
-        <h3>Skills</h3>
-
-        <div class="skills">
-            <span class="skill">Unreal Engine 4</span>
-            <span class="skill">Unreal Engine 5</span>
-            <span class="skill">C++</span>
-            <span class="skill">Blueprints</span>
-            <span class="skill">Godot</span>
-            <span class="skill">PlayCanvas</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">WebGL</span>
-            <span class="skill">XR</span>
-            <span class="skill">BIM Visualization</span>
-        </div>
-    </section>
-
-    <section class="section">
-        <h3>Experience</h3>
-
-        <div class="card">
-            <h4>Real-Time 3D Specialist</h4>
-            <p>4+ Years Experience</p>
-            <p>
-                Developed real-time interactive applications,
-                visualization systems, web experiences,
-                XR applications and game-related solutions.
-            </p>
-        </div>
-    </section>
-
-    <section class="section">
-        <h3>Featured Projects</h3>
-
-        <div class="project">
-            <h4>Samsung Web AR Experience</h4>
-            <p>
-                Interactive Web AR experience allowing users to
-                place and explore Samsung devices in real-world
-                environments directly from mobile browsers.
-            </p>
-        </div>
-
-        <div class="project">
-            <h4>Samsung WindFree AR Experience</h4>
-            <p>
-                Web-based AR product visualization showcasing
-                WindFree cooling technology and interactive features.
-            </p>
-        </div>
-
-        <div class="project">
-            <h4>Enterprise 3D Visualization</h4>
-            <p>
-                Real-time visualization solutions using Unreal Engine
-                for architecture, engineering and product experiences.
-            </p>
-        </div>
-
-    </section>
-
-    <section class="section">
-        <h3>Contact</h3>
-
-        <div class="card">
-            <p>Email: your-email@example.com</p>
-            <p>LinkedIn: linkedin.com/in/your-profile</p>
-            <p>GitHub: github.com/your-github</p>
-        </div>
-    </section>
-
+<div class="topbar">
+    <a class="download-btn" href="Sumit_Kumar_CV.pdf" download>
+        Download CV
+    </a>
 </div>
 
-<footer>
-    © 2026 Sumit Kumar | Real-Time 3D Specialist
-</footer>
+<iframe
+    class="pdf-viewer"
+    src="Sumit_Kumar_CV.pdf">
+</iframe>
 
 </body>
 </html>
